@@ -1,0 +1,27 @@
+<main>
+
+    <div class="playerContainer">
+
+      <h3 class="movieTitle">{{name}}</h3>
+
+      <video class="movie" width="768" height="432" controls autoplay>
+        <source src="{{mp4}}" type="video/mp4"><!-- We have to use mp4 -->
+        Your browser does not support the video tag.
+      </video>
+
+      <p class="movieDescription">
+        {{discription}}
+      </p>
+    </div>
+
+    <main class="commentContainer">
+
+      {{#each commentArray}}
+        {{> comment}}
+      {{/each}}
+
+    </main>
+
+    {{> createCommentModal}}
+
+  </main>

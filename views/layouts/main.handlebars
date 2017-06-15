@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/main.css" media="screen"> <!-- CSS style sheet -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"> <!-- Font -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Olu</title>
+  </head>
+
+
+  <header>
+  <a href="/"><h1>Olu</h1></a>
+
+  <nav>
+    <ul class="navItems">
+        <li><a href="/">Home</a></li>
+        <li><a href="/catalog">Catalog</a></li>
+        {{#if displaySearch}}
+          {{> search}}
+        {{/if}}
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+
+    {{{body}}}
+
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
+  <script src="/movieTemplate.js"></script>
+  <script src="/commentTemplate.js"></script>
+  <script src="/index.js"></script>
+
+</html>
