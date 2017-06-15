@@ -107,6 +107,13 @@ nav {
     justify-content: center;
 }
 
+.altNodeContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
 .movieCategory {
     order: <integer>;
     margin: 10px;
